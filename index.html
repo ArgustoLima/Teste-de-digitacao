@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Teste de Digitação</title>
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
 </head>
 <body>
-    <h1>Teste de velocidade de digitação</h1>
-    <p class="frase">Esse texto tem cinco palavras</p>
-    <ul class="informacoes">
-        <li><span id="tamanho-frase">0</span> palavras</li>
-        <li><span id="tempo-digitacao">10</span> segundos</li>
-    </ul>
+    <div class="container">
+        <h1 class="center">Teste de velocidade de digitação</h1>
+        <p class="frase center">Esse texto tem cinco palavras</p>
+        <ul class="informacoes center">
+            <li><span id="tamanho-frase">0</span> palavras</li>
+            <li><span id="tempo-digitacao">5</span> segundos</li>
+        </ul>
 
-    <textarea class="campo-digitacao" rows="8" cols="40"></textarea>
+        <textarea class="campo-digitacao" rows="8" cols="40"></textarea>
+        <button id="botao-reiniciar">Reiniar Jogo</button>
 
-    <ul>
-        <li><span id="contador-caracteres">0</span> caracteres</li>
-        <li><span id="contador-palavras">0</span> palavras</li>
-    </ul>
+        <ul class="center">
+            <li><span id="contador-caracteres">0</span> caracteres</li>
+            <li><span id="contador-palavras">0</span> palavras</li>
+        </ul>
+
+    </div>
+    
 
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
